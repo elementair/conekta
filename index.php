@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-Mx">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>conekta</title>
 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Web Page">
+  	<meta name="keywords" content="shifra,shifraspa,shifraspaandares,spa,spa andares,medical center,masajes,tratamientos,spa guadalajara,spa andares">
+  	<meta name="author" content="emanuel">
+	<title>conekta</title>
 	<!------------------------------------------------------
 	-
 	-- conekta
 	-
 	-------------------------------------------------------->
-
 	<script type="text/javascript" src="https://cdn.conekta.io/js/latest/conekta.js"></script>
-
 	<!------------------------------------------------------
 	-
 	-- jQuery
 	-
 	-------------------------------------------------------->
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
 	<!------------------------------------------------------
 	-
 	-- bootstrap
@@ -28,10 +27,10 @@
 	-------------------------------------------------------->
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 	<!------------------------------------------------------
 	-
@@ -45,26 +44,59 @@
 </head>
 <body>
 
-	<h1> que hay aquí</h1>
-
 	<form id="card-form">
 
 		<div class="card">
 			<div class="card-header">
 				<div class="row display-tr">
-					<h3> Pago en Linea</h3>
+					<h3> Pago en Línea</h3>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<label>
-					Nombre del tarjetahabiente
-				</label>
-				<input value="emanuel arias" data-conekta="card[name]" type="text" name="name" id="name" class="form-control">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md-6">
+						<label>
+							Nombre del tarjetahabiente
+						</label>
+						<input value="emanuel arias" data-conekta="card[name]" type="text" name="name" id="name" class="form-control">
+					</div>
+				</div>
+				<div class="row">
 
-				<label>
-					Nombre del tarjetahabiente
-				</label>
-				<input value="321654987654987" data-conekta="card[number]" type="text" name="name" id="name" class="form-control">
+					<div class="col-md-6">
+
+						<label>
+							Número de targeta
+						</label>
+						<input value="4242424242424242" data-conekta="card[number]" type="text" class="form-control" maxlength="16">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<label>
+							CVC
+						</label>
+						<input value="390" data-conekta="card[cvc]" type="text" class="form-control" maxlength="4">
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="col-md-6">
+
+						<label>
+							Fecha de expiración (MM/AA)
+						</label>
+						<input style="width: 50px; display: inline-block;" value="11" data-conekta="card[exp_month]" type="text" class="form-control" maxlength="2">
+
+						<input style="width: 50px; display: inline-block;" value="20" data-conekta="card[exp_year]" type="text" class="form-control" maxlength="2">
+					</div>
+				</div>
+				<div class="row">
+					<button class="btn btn-success btn-lg">
+						<i class="fa fa-check-square"></i> PAGAR
+					</button>
+				</div>
 			</div>
 		</div>
 
